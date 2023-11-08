@@ -8,7 +8,7 @@ Afterward, we perform two basic SQL queries:
 
 We select all items from the table, ordering them by price in ascending order, so you can see a list of items from the cheapest to the most expensive.
 We calculate the average price of all items in the store using the "AVG" function and display it as "AveragePrice."
-I can further expand on this by adding more data, columns, and complex queries as needed for specific store requirements.
+I can further expand on this by adding more data, columns, and complex queries as needed for specific data requirements.
 
 CREATE TABLE Johns_Store (id INTEGER PRIMARY KEY, name TEXT, 
 Price Numeric, quantity INTEGER, aisle INTEGER);
