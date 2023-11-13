@@ -1,5 +1,5 @@
 # Project-1
-A collection of my Sample SQL Projects. 
+A collection of my SQL Sample Projects. 
 
 🚀 Welcome to My SQL Learning Journey!
 
