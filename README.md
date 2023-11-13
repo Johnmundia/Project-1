@@ -5,8 +5,11 @@ This repository showcases some of my initial projects as I embark on a journey t
 
 Key Features:
 
-Skill Focus: The projects primarily revolve around creating and querying databases, with an emphasis on practical applications.
+Skill Focus: The projects primarily revolve around creating and querying databases, with an emphasis on practical 
+applications.
+
 Skill Improvement: With each project, my goal is to enhance my understanding of SQL concepts and improve my ability to design efficient and effective databases and data reports.
+
 Learning in Progress: Consider this repository as a snapshot of my learning process. I'm open to feedback and suggestions as I evolve in my SQL journey.
 
 Feel free to explore the projects and follow along with my SQL learning adventure! 📊💡
