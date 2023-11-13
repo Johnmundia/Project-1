@@ -1,7 +1,12 @@
-CREATE TABLE Employee_Demographics (id INTEGER PRIMARY KEY, FirstName TEXT, LastName TEXT, Age INTEGER, Gender TEXT);
+Table 1 Query: 
+CREATE TABLE Employee_Demographics 
+(id INTEGER PRIMARY KEY, FirstName TEXT, LastName TEXT, Age INTEGER, Gender TEXT);
 
-CREATE TABLE Employee_Salary (id INTEGER PRIMARY KEY, JobTitle TEXT, Salary NUMERIC);
+Table 2 Query:
+CREATE TABLE Employee_Salary 
+(id INTEGER PRIMARY KEY, JobTitle TEXT, Salary NUMERIC);
 
+Table 1 Insert:
 Insert into Employee_Demographics VALUES
 (1001, "Jim","Halpert",30,"Male"),
 (1002, "Pam","Beasley",30,"Female"),
@@ -14,6 +19,7 @@ Insert into Employee_Demographics VALUES
 (1009, "Kevin","Malone",38,"Male");
 SELECT * FROM Employee_Demographics;
 
+Table 2 Insert:
 Insert Into Employee_Salary VALUES
 (1001,"Salesmam",50000.00),
 (1002,"Receptionist",40000.00),
@@ -26,9 +32,11 @@ Insert Into Employee_Salary VALUES
 (1009,"Accountant",45000.00);
 SELECT * FROM Employee_Salary;
 
+Table 1 Data Query:
 SELECT * FROM Employee_Demographics Order by Age; 
 SELECT * FROM Employee_Demographics Order by Gender;
 
+Table 2 Data Query: 
 SELECT * FROM Employee_Salary Order by Salary; 
 SELECT MAX(Salary) AS Highest_Salary From Employee_Salary;
 SELECT MIN(Salary) AS Lowest_Salary From Employee_Salary;
