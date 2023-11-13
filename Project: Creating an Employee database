@@ -1,0 +1,35 @@
+CREATE TABLE Employee_Demographics (id INTEGER PRIMARY KEY, FirstName TEXT, LastName TEXT, Age INTEGER, Gender TEXT);
+
+CREATE TABLE Employee_Salary (id INTEGER PRIMARY KEY, JobTitle TEXT, Salary NUMERIC);
+
+Insert into Employee_Demographics VALUES
+(1001, "Jim","Halpert",30,"Male"),
+(1002, "Pam","Beasley",30,"Female"),
+(1003, "Dwight","Schrute",29,"Male"),
+(1004, "Angela","Martin",34,"Female"),
+(1005, "Toby","Flenderson",36,"Male"),
+(1006, "Michael","Scott",36,"Male"),
+(1007, "Meredith","Palmer",37,"Female"),
+(1008, "Stanley","Hudson",45,"Male"),
+(1009, "Kevin","Malone",38,"Male");
+SELECT * FROM Employee_Demographics;
+
+Insert Into Employee_Salary VALUES
+(1001,"Salesmam",50000.00),
+(1002,"Receptionist",40000.00),
+(1003,"Salesman",65000.00),
+(1004,"Accountant",45000.00),
+(1005,"HR",45000.00),
+(1006,"Regional Manager",65000.00),
+(1007,"Supplier Relations",45000.00),
+(1008,"Salesman",50000.00),
+(1009,"Accountant",45000.00);
+SELECT * FROM Employee_Salary;
+
+SELECT * FROM Employee_Demographics Order by Age; 
+SELECT * FROM Employee_Demographics Order by Gender;
+
+SELECT * FROM Employee_Salary Order by Salary; 
+SELECT MAX(Salary) AS Highest_Salary From Employee_Salary;
+SELECT MIN(Salary) AS Lowest_Salary From Employee_Salary;
+SELECT AVG(Salary) AS Average_Salary From Employee_Salary;
