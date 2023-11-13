@@ -2,7 +2,7 @@ Table 1 Query:
 CREATE TABLE Employee_Demographics 
 (id INTEGER PRIMARY KEY, FirstName TEXT, LastName TEXT, Age INTEGER, Gender TEXT);
 
-Table 2 Query:
+Table 2 Query: 
 CREATE TABLE Employee_Salary 
 (id INTEGER PRIMARY KEY, JobTitle TEXT, Salary NUMERIC);
 
