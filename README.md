@@ -1,15 +1,6 @@
 # Project-1: Designing a store database 
 A Sample of my SQL Project: 
 
-In this code, we first create a table called "Johns_Store" to store information about the company's items. We insert sample data for 15 items, each with columns for ItemID, ItemName, ItemPrice, Stock/Quantity, and the ItemAisle. 
-
-
-Afterward, we perform two basic SQL queries:
-
-We select all items from the table, ordering them by price in ascending order, so you can see a list of items from the cheapest to the most expensive.
-We calculate the average price of all items in the store using the "AVG" function and display it as "AveragePrice."
-I can further expand on this by adding more data, columns, and complex queries as needed for specific data requirements.
-
 CREATE TABLE Johns_Store (id INTEGER PRIMARY KEY, name TEXT, 
 Price Numeric, quantity INTEGER, aisle INTEGER);
 
