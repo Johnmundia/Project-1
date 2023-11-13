@@ -25,5 +25,6 @@ INSERT INTO Johns_Store Values(14,"Gloves",7.99,90,14);
 INSERT INTO Johns_Store Values(15,"Belt",12.99,60,15);
 
 Select Statement: 
+
 Select * From Johns_Store Order by Price; 
 SELECT AVG(Price) AS AveragePrice FROM Johns_Store;
