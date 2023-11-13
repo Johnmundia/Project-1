@@ -2,12 +2,10 @@
 A Sample of my SQL Project: 
 
 Table Query:
-
 CREATE TABLE Johns_Store (id INTEGER PRIMARY KEY, name TEXT, 
 Price Numeric, quantity INTEGER, aisle INTEGER);
 
 Table Insert: 
-
 INSERT INTO Johns_Store Values(1,"T-Shirt", 12.99,100,1);
 INSERT INTO Johns_Store Values(2,"Jeans",29.99,50,2);
 INSERT INTO Johns_Store Values(3,"Dress Shoes",49.99,30,3);
@@ -25,6 +23,5 @@ INSERT INTO Johns_Store Values(14,"Gloves",7.99,90,14);
 INSERT INTO Johns_Store Values(15,"Belt",12.99,60,15);
 
 Select Statement: 
-
 Select * From Johns_Store Order by Price; 
 SELECT AVG(Price) AS AveragePrice FROM Johns_Store;
