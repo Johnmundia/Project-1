@@ -1,7 +1,7 @@
 # Project-1
 A collection of my SQL Sample Projects. 
 
-🚀 Welcome to My SQL Learning Journey!
+🚀 Welcome to My SQL Learning Journey! 
 
 This repository showcases some of my initial projects as I embark on a journey to enhance my SQL skills. As a continuous learner, I'm dedicated to refining my abilities in database management and analysis. These projects focuses on creating, filtering, orginizing and analyzing databases. Which will help with my overall SQL proficiency development. 
 
