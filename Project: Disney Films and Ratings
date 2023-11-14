@@ -1,0 +1,23 @@
+Create Table:
+CREATE TABLE DisneyFilms (FilmID INTEGER PRIMARY KEY,Title Text, ReleaseYear INTEGER, Rating Numeric); 
+
+Table Inserts:
+INSERT INTO DisneyFilms (Title, ReleaseYear, Rating) VALUES
+    ('The Lion King',1999,5),
+    ('Toy Story 2',1999,3),
+    ('Monsters, Inc',2001,5),
+    ('Finding Nemo',2003,4),
+    ('Cars',2006,3), 
+    ('Frozen',2013,3),
+    ('Moana',2016,4),
+    ('Coco',2017,5), 
+    ('Encanto',2021,3),
+    ('Lightyear',2022,3);
+Order Table:   
+SELECT * FROM DisneyFilms ORDER BY Rating DESC; 
+
+Table Calculations: 
+SELECT ReleaseYear, AVG(Rating) AS AverageRating 
+FROM DisneyFilms
+GROUP BY ReleaseYear
+ORDER BY ReleaseYear;
