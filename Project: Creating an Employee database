@@ -1,10 +1,10 @@
 Project#2: "The Office" Employee Database
 
-Table 1 Query: 
+Table 1: 
 CREATE TABLE Employee_Demographics 
 (id INTEGER PRIMARY KEY, FirstName TEXT, LastName TEXT, Age INTEGER, Gender TEXT);
 
-Table 2 Query: 
+Table 2: 
 CREATE TABLE Employee_Salary 
 (id INTEGER PRIMARY KEY, JobTitle TEXT, Salary NUMERIC);
 
