@@ -1,4 +1,4 @@
-# Project-1: Designing a store database 
+Project-1: Designing a store database 
 
 Table Query:
 CREATE TABLE Johns_Store (id INTEGER PRIMARY KEY, name TEXT, 
