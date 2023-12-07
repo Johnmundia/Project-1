@@ -1,0 +1,39 @@
+Project #4: Employee + Projects
+
+Table 1: 
+CREATE TABLE Employees (emp_id INTEGER PRIMARY KEY,emp_name TEXT,emp_salary Numeric,department_id INTEGER);
+
+Table 2: 
+CREATE TABLE Projects (project_id INTEGER PRIMARY KEY,project_name TEXT,emp_id INTEGER,project_completion_dated NUMERIC);
+
+Table 1 Inserts: 
+INSERT INTO Employees VALUES 
+(1,'John Doe',70000,101),
+(2,'Jane Smith',80000,102),
+(3,'Bob Johnson',90000,101),
+(4,'Alice Williams',75000,103),
+(5,'Charlie Brown',85000,102),
+(6,'James Rodgers',65000,103), 
+(7,'Emily Davis',72000,101),
+(8,'Michael Clark',92000,102),
+(9,'Amanda White',78000,103),
+(10,'Joshua Lee',88000,102);
+
+Table 2 Inserts: 
+INSERT INTO Projects VALUES
+(101,'Project A',1,'2023-01-15'),
+(102,'Project B',2,'2023-02-20'),
+(103,'Project C',4,'2023-03-10'),
+(104,'Project D',2,'2023-01-05'),
+(105,'Project E',3,'2023-02-28'),
+(106,'Project F',1,'2023-03-20'),
+(107,'Project G',5,'2023-01-15'),
+(108,'Project I',4,'2023-03-28');
+
+Data Query: 
+Select * From 'Employees' Order by emp_salary DESC; 
+
+Data Query: 
+SELECT e.department_id,AVG(e.emp_salary) AS avg_salary,COUNT(DISTINCT p.project_id) AS completed_projects FROM employees e JOIN projects p ON e.emp_id = p.emp_id
+WHERE e.emp_id IN (SELECT emp_id FROM projects GROUP BY emp_id HAVING COUNT(project_id) > 1) GROUP BY e.department_id; 
+(The result provides the average salary and the count of completed projects, considering only those employees who have completed more than one project).
